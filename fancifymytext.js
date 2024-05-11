@@ -7,8 +7,8 @@ function bigText(){
 }
 
 function moo(){
-	document.getElementById("fancytext").style.textTransform = "uppercase";
 	let str = document.getElementById("fancytext").value;
+	str = str.toUpperCase();
 	let parts = str.split(".");
 	str = parts.join("-Moo.");
 	document.getElementById("fancytext").value = str;
